@@ -64,9 +64,9 @@ fn nearest_neighbor(
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let race_data_path = "sorted_api_race_data_short_sample.csv";
+    let race_data_path = "sorted_api_race_data_all.csv";
     let led_data_path = "board_led_coords_with_numbers.csv";
-    let output_path = "processed_short_sample_race_data.csv";
+    let output_path = "processed_race_data_all.csv";
 
     let race_data: Vec<RaceData> = read_csv(race_data_path)?;
     let led_data: Vec<LedData> = read_csv(led_data_path)?;
